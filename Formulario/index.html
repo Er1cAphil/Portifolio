@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Formulário</h2>
+    <form action="pagina-de-inscricao" method="post">
+        <fieldset>
+            <legend>Dados Gerais </legend>
+                <label for="name">Nome:</label>
+                <input type="text" minlength="3" id="name"/>
+
+                <label for="data_de_nascimento">Data de Nascimento:</label>
+                <input type="text" id="data_de_nascimento"/>
+
+                <label for="cpf">CPF:</label>
+                <input type="cpf" minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" placeholder="000.000.000-00" required> 
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+                <label for="tipo_endereco">Tipo:</label>
+                <select id="tipo_endereco">
+                    <option value="">Selecione</option>
+                    <option value="">Rua</option>
+                    <option value="">Travessa</option>
+                    <option value="">Avenida</option>
+                    <option value="">Estrada</option>
+                    <option value="">Rodovia</option>
+                    <option value="">Outros</option>
+                </select>
+                <label for="logradouro_endereco">Lograduro</label>
+                <input type="text" id="logradouro_endereco"/>
+
+                <label for="numero_endereco">Número:</label>
+                <input type="text" id="numero_endereco"/>
+
+                <label for="complemento_endereco">Complemento</label>
+                <input type="text" id="complemento_endereco"/>
+        </fieldset>
+        <fieldset>
+            <legend>Fale Conosco</legend>
+                <label for="msg">Mensagem:</label>
+                <textarea type="text" id="msg"></textarea>
+        </fieldset>
+    </form>
+</body>
+</html>
